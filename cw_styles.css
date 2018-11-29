@@ -5,8 +5,8 @@
    Tutorial 5
    Case Problem 3
    
-   Author:   
-   Date:      
+   Author: Connor J Webdale 
+   Date: 11.29.18 
    
    Filename: cw_styles.css
 
@@ -17,21 +17,36 @@
 
 
 /* Import Basic Design Styles  */
-
-
+/*Imported a css style sheet. */
+@import url(cw_designs.css);
 
 /* ===============================
 	General Styles for All Devices
    ===============================
 */
+/*Lays out a nav list, with multiple uls, side-by-side. Centers the nav along the main axis.  */
+nav#bottom {
+    display: -webkit-flex;
+    display: flex;
 
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+/* Defines ul elements so the width will not exceed 150 pixels but can go below. */
+ul {
+    max-width: 150px;
+}
 
 
 /* ===============================
 	Mobile Styles up to 480 pixels
    ===============================
 */
-	
+
 
 
 
@@ -39,4 +54,3 @@
 	Tablet and Desktop Devices: 481px or more 
    ============================================
 */
-
